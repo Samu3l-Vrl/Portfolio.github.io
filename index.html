@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Ton Nom</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= ACCUEIL ================= -->
+<section id="accueil" class="section accueil-grid">
+
+    <!-- Titre centré au-dessus -->
+    <div class="accueil-titre">
+        <h1>Bonjour, je suis Samuel Verel</h1>
+    </div>
+
+    <!-- Split : côté gauche texte, côté droit CV -->
+    <div class="accueil-content">
+        <!-- Côté gauche : texte -->
+        <div class="texte">
+            <p>Passionné par le développement informatique depuis plusieurs années, je me spécialise dans la création d’applications et de jeux vidéo interactifs.</p>
+            <p>Autodidacte, j’ai commencé à apprendre le C# grâce au parcours <span style="color: #1ed5ff; font-weight: bold;">Junior Programmer Pathway</span> d’Unity, ce qui m’a permis de créer mes premiers projets et de comprendre les bonnes pratiques de la programmation orientée objet.</p>     
+            <p>J’aime transformer des idées en projets concrets et relever des défis techniques. Mon objectif est de produire des solutions fonctionnelles et innovantes, tout en améliorant continuellement mes compétences.</p>
+            <p>Découvrez mes projets ci-dessous pour voir concrètement ce que je peux réaliser.</p>
+        </div>
+
+        <!-- Côté droit : bouton CV -->
+        <div class="cv">
+            <a href="docs/CV_stage_Samuel_Verel.pdf" download class="btn-cv">Télécharger mon CV</a>
+        </div>
+    </div>
+
+    <!-- Blobs animés -->
+    <div id="blobs-container">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+</section>
+
+
+
+
+    <!-- ================= PROJETS ================= -->
+    <section id="projets" class="section">
+        <h2 class="section-title">Mes Projets</h2>
+
+        <div class="projects-grid">
+
+            <div class="card">
+                <img src="img/Junior_PP.png" alt="Projet 1">
+                <div class="card-text">
+                    <h3>Junior Programmer Pathway</h3>
+                    <p>Formation Unity pour apprendre le C# en créant de petits jeux, tout en développant la résolution de bugs et la POO.</p>
+                    <button class="btn-view" data-modal="modal1">Voir plus</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Electronique.png" alt="Projet 2">
+                <div class="card-text">
+                    <h3>Électronique</h3>
+                    <p>Conception d'un prototype de coffre fort contenant plusieurs mécanismes d'authentification programmés sur Arduino.</p>
+                    <button class="btn-view" data-modal="modal2">Voir plus</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Traitement_Signal.png" alt="Projet 3">
+                <div class="card-text">
+                    <h3>Traitement du signal</h3>
+                    <p>Conception et simulation d’une chaîne de communication ultrasonore : prototype numérique en Python.</p>
+                    <button class="btn-view" data-modal="modal3">Voir plus</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/BDD.png" alt="Projet 4">
+                <div class="card-text">
+                    <h3>Base de données</h3>
+                    <p>Conception et réalisation d’une base de données relationnelle complète pour centraliser et exploiter les données de qualité de l’air en France.</p>
+                    <button class="btn-view" data-modal="modal4">Voir plus</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/SE.png" alt="Projet 5">
+                <div class="card-text">
+                    <h3>Systèmes embarqués</h3>
+                    <p>Conception et réalisation d’un prototype de station météo embarquée sur Arduino pour la collecte et l’enregistrement des données environnementales.</p>
+                    <button class="btn-view" data-modal="modal5">Voir plus</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/POO.png" alt="Projet 6">
+                <div class="card-text">
+                    <h3>Programmation Orientée Objet</h3>
+                    <p>Développement du jeu de la vie en C++ avec une interface graphique, intégrant tests unitaires et conception orientée objet. (en cours)</p>
+                    <button class="btn-view" data-modal="modal6">Voir plus</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= MODALS PROJETS ================= -->
+    <!--=========== Modal Projet Junior Programmer Pathway ==========-->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <!-- BANDEAU IMAGE -->
+    <div class="modal-banner">
+      <img src="img/Junior_PP_banner.png" alt="Junior Programmer Pathway">
+    </div>
+
+    <h3>Junior Programmer Pathway – Parcours d’apprentissage Unity</h3>
+
+    <p>Le Junior Programmer Pathway est un parcours d’apprentissage progressif conçu pour préparer les débutants à devenir des programmeurs Unity opérationnels. Il couvre toutes les compétences essentielles pour développer des projets en C#, de la compréhension de bases de code à la création de systèmes interactifs dans Unity.</p>
+</br>
+    <p><strong>Objectifs du projet :</strong></p>
+    <ul>
+      <li>Acquérir les compétences fondamentales pour développer des projets en Unity et C#.</li>
+      <li>Apprendre à écrire des scripts efficaces, sécurisés et lisibles.</li>
+      <li>Comprendre la programmation orientée objet : héritage, polymorphisme, abstraction et encapsulation.</li>
+      <li>Se préparer au développement professionnel : création de portfolio et collaboration en équipe.</li>
+    </ul>
+</br>
+    <p><strong>Modules et travaux réalisés :</strong></p>
+    <ol>
+      <li><strong>Gestion de projet et versioning</strong>
+        <ul>
+          <li>Utilisation de Git pour suivre les versions du projet.</li>
+          <li>Organisation des fichiers et des scènes Unity.</li>
+        </ul>
+      </li>
+      <li><strong>Débogage et optimisation</strong>
+        <ul>
+          <li>Identification et correction des bugs dans les scripts existants.</li>
+          <li>Optimisation des performances et de la lisibilité du code.</li>
+        </ul>
+      </li>
+      <li><strong>Création de systèmes interactifs</strong>
+        <ul>
+          <li>Développement de mini-projets pour mettre en pratique les concepts de programmation.</li>
+          <li>Programmation d’interfaces utilisateur et manipulation de données persistantes.</li>
+        </ul>
+      </li>
+      <li><strong>Conception itérative et POO</strong>
+        <ul>
+          <li>Application des principes de la programmation orientée objet.</li>
+          <li>Développement de projets complets intégrant toutes les étapes apprises.</li>
+        </ul>
+      </li>
+    </ol>
+</br>
+    <p><strong>Compétences mobilisées :</strong></p>
+    <ul>
+      <li>Programmation C# pour Unity.</li>
+      <li>Développement de projets interactifs et gestion de scènes.</li>
+      <li>Application des concepts de POO (héritage, polymorphisme, abstraction, encapsulation).</li>
+      <li>Collaboration et travail en contexte professionnel simulé.</li>
+      <li>Création et gestion d’un portfolio de projets.</li>
+    </ul>
+</br>
+    <p><strong>Résultat :</strong> À la fin du parcours, les apprenants sont capables de concevoir et coder des projets Unity complets, de résoudre des problèmes techniques, et sont prêts pour une certification Unity et un rôle de développeur junior.</p>
+  </div>
+</div>
+
+
+    <!-- ================= MODAL ELECTRONIQUE ================= -->
+    <div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-banner">
+      <img src="img/Electronique_banner.png" alt="Projet Électronique">
+    </div>
+
+    <h3>Électronique – StrongBox 3000</h3>
+  </br>
+    <p><strong>Objectifs du projet :</strong></p>
+    <ul>
+      <li>Créer une carte électronique personnalisée pour chaque agent, avec un identifiant unique et une combinaison dédiée d’interrupteurs.</li>
+      <li>Concevoir la logique interne du coffre capable de reconnaître 8 modèles de cartes à partir de 4 entrées binaires.</li>
+      <li>Produire un prototype physique intégrant résistances, transistors et LEDs, capable de générer une tension spécifique à chaque modèle de carte.</li>
+      <li>Implémenter sur Arduino un système d’authentification complet avec plusieurs mécanismes (questions/réponses, code dynamique, scans simulés, etc.)</li>
+      <li>Gérer les niveaux de sécurité pour adapter les mécanismes selon la carte insérée.</li>
+    </ul>
+  </br>
+    <p><strong>Travaux réalisés :</strong></p>
+    <ol>
+      <li><strong>Étude logique & simulations (Logisim)</strong>
+        <ul>
+          <li>Création des tables de vérité et simplification via Karnaugh.</li>
+          <li>Conception du circuit logique interne du coffre et des circuits de cartes.</li>
+          <li>Simulation complète des mécanismes pour garantir la reconnaissance correcte des 8 modèles de cartes.</li>
+        </ul>
+      </li>
+      <li><strong>Prototype électronique (Arduino + composants)</strong>
+        <ul>
+          <li>Dimensionnement des résistances et calcul des tensions caractéristiques.</li>
+          <li>Création du circuit du coffre : interrupteurs, activation par transistors, LEDs.</li>
+          <li>Réalisation du circuit d’une carte agent avec schéma optimisé.</li>
+          <li>Mesure et interprétation des tensions par Arduino.</li>
+        </ul>
+      </li>
+      <li><strong>Développement logiciel (Arduino)</strong>
+        <ul>
+          <li>Programmation complète du système StrongBox 3000.</li>
+          <li>Découpage en fonctions pour lisibilité et maintenabilité.</li>
+          <li>Intégration de plusieurs mécanismes d’authentification (MA1 à MA5).</li>
+          <li>Gestion des 6 niveaux de sécurité et communication série.</li>
+        </ul>
+      </li>
+    </ol>
+  </br>
+    <p><strong>Compétences mobilisées :</strong></p>
+    <ul>
+      <li>Logique combinatoire & électronique numérique (Logisim)</li>
+      <li>Électronique analogique : dimensionnement, transistors, résistances, breadboard</li>
+      <li>Programmation embarquée sur Arduino (C/C++)</li>
+      <li>Conception algorithmique (logigrammes)</li>
+      <li>Gestion de projet & production de livrables techniques</li>
+      <li>Travail d’équipe, communication et démonstration finale</li>
+    </ul>
+  </br>
+    <p><strong>Résultat :</strong> Prototype fonctionnel capable de reconnaître physiquement un modèle de carte via tension analogique, d’adapter dynamiquement ses mécanismes, de simuler un coffre-fort multi-niveaux et de démontrer le fonctionnement complet lors de la soutenance.</p>
+
+  </div>
+</div>
+
+    <!--============= Modal Projet ESCAPE NO GAME ==========-->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-banner">
+      <img src="img/Traitement_Signal_banner.png" alt="Projet ESCAPE NO GAME">
+    </div>
+
+    <h3>ESCAPE NO GAME – Communication par ondes sonores</h3>
+  </br>
+    <p><strong>Objectifs du projet :</strong></p>
+    <ul>
+      <li>Imaginer une méthode scientifique pour transmettre des informations à travers des canaux non conventionnels.</li>
+      <li>Modéliser, expérimenter et réaliser un Proof of Concept (POC) complet simulant la transmission et la réception d’un message.</li>
+      <li>Appliquer des concepts de traitement du signal, filtrage, modulation et codage tout en respectant des contraintes techniques et environnementales.</li>
+    </ul>
+    </br> 
+    <p><strong>Travaux réalisés :</strong></p>
+    <ol>
+      <li><strong>Proposition de solution</strong>
+        <ul>
+          <li>Étude des caractéristiques des ondes sonores et réflexion sur une communication discrète.</li>
+          <li>Proposition de l’utilisation de signaux ultrasonores pour véhiculer le message sans être audible.</li>
+          <li>Développement de schémas et justifications scientifiques de la solution.</li>
+        </ul>
+      </li>
+      <li><strong>Étude technique et filtrage</strong>
+        <ul>
+          <li>Détermination d’une plage de fréquence adaptée pour le signal non audible.</li>
+          <li>Conception d’un filtre analogique d’ordre 2 pour extraire le signal du micro.</li>
+          <li>Simulation théorique et pratique du filtre avec LTSpice et CircuitJS, analyse des diagrammes de Bode et ajustement des composants.</li>
+        </ul>
+      </li>
+      <li><strong>Modélisation de la chaîne de transmission</strong>
+        <ul>
+          <li>Description complète de la séquence de transmission du message : génération du son, propagation, réception par le micro et traitement.</li>
+          <li>Distinction entre les signaux analogiques et numériques à chaque étape.</li>
+          <li>Dimensionnement des paramètres (fréquence d’échantillonnage, type de codage, structure des trames).</li>
+          <li>Illustration sur un exemple simple (un caractère ASCII) pour montrer toutes les transformations nécessaires.</li>
+        </ul>
+      </li>
+      <li><strong>Prototype numérique</strong>
+        <ul>
+          <li>Implémentation d’un POC en Python/Jupyter simulant la chaîne complète de transmission.</li>
+          <li>Transformation d’un message texte en signal sonore, puis reconstruction du message à la réception.</li>
+          <li>Mise en place de systèmes de détection d’erreurs, de trames et de visualisation des étapes de traitement.</li>
+          <li>Intégration possible de fonctionnalités avancées : gestion du bruit, demi-duplex, CRC, modulation supplémentaire ou simulation entre deux machines.</li>
+        </ul>
+      </li>
+    </ol>
+</br>
+    <p><strong>Compétences mobilisées :</strong></p>
+    <ul>
+      <li>Analyse et conception scientifique d’une chaîne de communication.</li>
+      <li>Traitement et filtrage du signal (analogique et numérique).</li>
+      <li>Modélisation et simulation en Python/Jupyter.</li>
+      <li>Gestion de projet en équipe, présentation professionnelle et démonstration de prototype.</li>
+      <li>Application concrète de notions de physique, mathématiques et informatique.</li>
+    </ul>
+</br>
+    <p><strong>Résultat :</strong> Le projet a abouti à un prototype fonctionnel simulant la communication ultrasonore. Chaque étape de transformation du message est visualisée et validée, démontrant la faisabilité technique d’une communication discrète dans un environnement isolé.</p>
+  </div>
+</div>
+
+    <!--============= Modal Projet ClearData =============-->
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    
+    <div class="modal-banner">
+      <img src="img/BDD_banner.png" alt="Projet ClearData">
+    </div>
+
+    <h3>Projet ClearData – Base de données sur la qualité de l’air</h3>
+</br>
+    <p><strong>Objectifs du projet :</strong></p>
+    <ul>
+      <li>Comprendre et reformuler un cahier des charges complexe issu de rapports client.</li>
+      <li>Concevoir et réaliser une base de données relationnelle robuste et normalisée.</li>
+      <li>Permettre l’exploitation des données via des requêtes SQL complexes et pertinentes.</li>
+      <li>Préparer un prototype fonctionnel et une démonstration pour valider la viabilité du projet.</li>
+    </ul>
+</br>
+    <p><strong>Travaux réalisés :</strong></p>
+    <ol>
+      <li><strong>Analyse et conception</strong>
+        <ul>
+          <li>Lecture approfondie des besoins client et synthèse des informations.</li>
+          <li>Définition de l’organisation du groupe et répartition des tâches.</li>
+          <li>Conception du dictionnaire de données et du modèle conceptuel de données (MCD) en 3e forme normale.</li>
+          <li>Transformation du MCD en modèle logique (MLD) et script SQL pour le modèle physique (MPD).</li>
+        </ul>
+      </li>
+      <li><strong>Peuplement de la base de données</strong>
+        <ul>
+          <li>Création d’un jeu de données réaliste comprenant plus de 200 relevés de capteurs.</li>
+          <li>Une vingtaine d’agents répartis sur plusieurs agences.</li>
+          <li>Une dizaine de rapports couvrant différentes périodes et types de données.</li>
+          <li>Gestion des contraintes de sécurité et de confidentialité (RGPD pour le personnel).</li>
+        </ul>
+      </li>
+      <li><strong>Développement et requêtes SQL</strong>
+        <ul>
+          <li>Implémentation des tables et relations avec MySQL 8.0.</li>
+          <li>Création de requêtes complexes incluant fonctions d’agrégation et jointures multiples.</li>
+          <li>Requêtes imbriquées et tri sur plusieurs critères.</li>
+          <li>Procédures stockées et fonctions pour automatiser certains rapports.</li>
+          <li>Optimisation du moteur de stockage et des requêtes pour garantir des performances efficaces.</li>
+        </ul>
+      </li>
+      <li><strong>Présentation et démonstration</strong>
+        <ul>
+          <li>Mise en place de comptes utilisateurs avec droits distincts (admin et user).</li>
+          <li>Préparation d’une démonstration interactive pour visualiser la base et exécuter des requêtes types.</li>
+          <li>Documentation complète sur les choix de conception, les contraintes respectées et les fonctionnalités de la base.</li>
+        </ul>
+      </li>
+    </ol>
+</br>
+    <p><strong>Compétences mobilisées :</strong></p>
+    <ul>
+      <li>Analyse et synthèse de besoins complexes.</li>
+      <li>Conception et normalisation de bases de données relationnelles.</li>
+      <li>Maîtrise de MySQL et des requêtes SQL avancées.</li>
+      <li>Organisation de projet et travail en équipe.</li>
+      <li>Respect des contraintes juridiques et techniques.</li>
+    </ul>
+</br>
+    <p><strong>Résultat :</strong> Une base de données relationnelle complète et fonctionnelle permettant de gérer les agences, le personnel, les capteurs et les rapports sur la qualité de l’air. La solution est optimisée, sécurisée et exploitable pour produire des analyses et résumés précis.</p>
+  </div>
+</div>
+
+
+    <!-- Modal Projet Worldwide Weather Watcher -->
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-banner">
+      <img src="img/SE_banner.png" alt="Projet Worldwide Weather Watcher">
+    </div>
+
+    <h3>Worldwide Weather Watcher – Station météo embarquée</h3>
+</br>
+    <p><strong>Objectifs du projet :</strong></p>
+    <ul>
+      <li>Développer un prototype fonctionnel de station météo embarquée.</li>
+      <li>Collecter et stocker des données environnementales (pression, température, hygrométrie, luminosité).</li>
+      <li>Concevoir un système interactif permettant le suivi de l’état via LED et boutons.</li>
+      <li>Fournir une documentation technique et utilisateur complète.</li>
+    </ul>
+</br>
+    <p><strong>Travaux réalisés :</strong></p>
+    <ol>
+      <li><strong>Analyse du système</strong>
+        <ul>
+          <li>Identification des fonctionnalités clés : acquisition de données, stockage sur carte SD, horodatage via RTC, interaction avec l’utilisateur via LED et boutons.</li>
+          <li>Conception de diagrammes UML et SysML, algorithmes et schémas explicatifs décrivant l’ensemble des flux et interactions du système.</li>
+          <li>Définition des modes de fonctionnement et scénarios d’utilisation.</li>
+        </ul>
+      </li>
+      <li><strong>Architecture du programme</strong>
+        <ul>
+          <li>Élaboration d’une architecture logicielle claire comprenant fonctions, variables, et modules.</li>
+          <li>Préparation d’un programme structuré permettant l’acquisition et le traitement des données, en vue de la future maquette.</li>
+          <li>Documentation interne du programme pour faciliter la maintenance et l’évolution du système.</li>
+        </ul>
+      </li>
+      <li><strong>Réalisation de la maquette</strong>
+        <ul>
+          <li>Implémentation complète du programme sur une carte Arduino ATmega328.</li>
+          <li>Montage minimal intégrant capteurs (pression, température, hygrométrie, luminosité), horloge RTC, LED RGB et boutons.</li>
+          <li>Création d’un scénario de démonstration montrant la collecte, l’enregistrement et l’affichage de l’état du système.</li>
+          <li>Tests de fonctionnement pour valider la fiabilité et la précision des mesures.</li>
+        </ul>
+      </li>
+      <li><strong>Documentation</strong>
+        <ul>
+          <li>Rédaction d’une documentation technique détaillant le fonctionnement global, les flux d’information et l’architecture logicielle.</li>
+          <li>Rédaction d’un guide utilisateur permettant à un membre d’équipage de piloter la station facilement.</li>
+        </ul>
+      </li>
+    </ol>
+</br>
+    <p><strong>Compétences mobilisées :</strong></p>
+    <ul>
+      <li>Conception et développement de systèmes embarqués.</li>
+      <li>Programmation Arduino et gestion des capteurs via I2C, SPI, UART et analogique.</li>
+      <li>Modélisation UML/SysML et algorithmes de contrôle.</li>
+      <li>Organisation de projet et travail en équipe.</li>
+      <li>Rédaction de documentation technique et utilisateur claire.</li>
+    </ul>
+</br>
+    <p><strong>Résultat :</strong> Une station météo embarquée fonctionnelle capable de mesurer et stocker les données environnementales essentielles à la surveillance météorologique en mer, avec une interface simple pour l’utilisateur et une documentation complète.</p>
+  </div>
+</div>
+
+
+    <!--================ Modal Projet POO =================-->
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="modal-banner">
+      <img src="img/POO_banner.png" alt="Projet POO">
+    </div>
+
+    <h3>Programmation Orientée Objet – Automate cellulaire</h3>
+</br>
+    <p><strong>Objectifs du projet :</strong></p>
+    <ul>
+      <li>Développer un programme orienté objet structuré et modulaire.</li>
+      <li>Mettre en œuvre une interface graphique via SFML pour visualiser l’évolution de l’automate cellulaire.</li>
+      <li>Appliquer les concepts de POO : classes, héritage, polymorphisme, encapsulation.</li>
+      <li>Réaliser des tests unitaires garantissant la validité des itérations de l’automate.</li>
+      <li>Produire une documentation complète incluant diagrammes de classes, diagrammes de séquence et diagrammes d’activité.</li>
+    </ul>
+</br>
+    <p><strong>Travaux réalisés :</strong></p>
+    <ol>
+      <li><strong>Conception et modélisation</strong>
+        <ul>
+          <li>Diagrammes de classes : représentation de la structure de l’application, des objets et de leurs relations.</li>
+          <li>Diagrammes de séquence : description des interactions entre objets lors de l’évolution de la grille.</li>
+          <li>Diagrammes d’activité : modélisation des processus et des comportements de l’automate.</li>
+          <li>Organisation de l’application selon les principes de modularité et responsabilité unique, facilitant la maintenance et l’évolution.</li>
+        </ul>
+      </li>
+      <li><strong>Implémentation</strong>
+        <ul>
+          <li>Développement d’une application console et graphique fonctionnelle, permettant de suivre l’évolution de la grille d’automate cellulaire en temps réel.</li>
+          <li>Application stricte des concepts OO : encapsulation des données, séparation des responsabilités, utilisation du polymorphisme pour la gestion des règles de l’automate.</li>
+          <li>Intégration de tests unitaires pour vérifier la validité des calculs à chaque itération.</li>
+        </ul>
+      </li>
+      <li><strong>Interface graphique</strong>
+        <ul>
+          <li>Utilisation de SFML pour afficher la grille et l’évolution des cellules.</li>
+          <li>Gestion de l’interaction utilisateur via la fenêtre graphique : démarrage, pause, réinitialisation et modification de paramètres de l’automate.</li>
+          <li>Création d’une expérience utilisateur claire et intuitive pour observer le comportement de l’automate.</li>
+        </ul>
+      </li>
+      <li><strong>Présentation orale</strong>
+        <ul>
+          <li>Démonstration de l’application, en mettant en évidence la cohérence de la conception OO, le fonctionnement correct de l’automate et la qualité du code.</li>
+          <li>Explication des choix de modélisation, de l’organisation des classes et de la logique de l’automate cellulaire.</li>
+          <li>Réponses aux questions techniques sur la POO et la mise en œuvre du projet.</li>
+        </ul>
+      </li>
+    </ol>
+</br>
+    <p><strong>Compétences mobilisées :</strong></p>
+    <ul>
+      <li>Programmation orientée objet en C++.</li>
+      <li>Conception UML : classes, séquences et activités.</li>
+      <li>Développement d’interfaces graphiques avec SFML.</li>
+      <li>Tests unitaires et validation fonctionnelle.</li>
+      <li>Travail en binôme et communication technique.</li>
+    </ul>
+</br>
+    <p><strong>Résultat :</strong> Une application console et graphique complète mettant en œuvre un automate cellulaire, démontrant la maîtrise des concepts de POO et permettant de visualiser et interagir avec le système de manière efficace et intuitive.</p>
+  </div>
+</div>
+
+
+    <!-- ================= COMPÉTENCES ================= -->
+    <section id="competences" class="section">
+        <h2 class="section-title">Compétences</h2>
+
+        <h3 class="competence-category">Bureautique</h3>
+        <div class="competences-grid">
+            <div class="competence-card">
+                <img src="img/word.png" alt="Word">
+                <h4>Word</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/excel.png" alt="Excel">
+                <h4>Excel</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/powerpoint.png" alt="PowerPoint">
+                <h4>PowerPoint</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/teams.png" alt="Teams">
+                <h4>Teams</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/canva.png" alt="Canva">
+                <h4>Canva</h4>
+            </div>
+        </div>
+
+        <h3 class="competence-category">Développement</h3>
+        <div class="competences-grid">
+            <div class="competence-card">
+                <img src="img/html.png" alt="HTML">
+                <h4>HTML</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/css.png" alt="CSS">
+                <h4>CSS</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/csharp.png" alt="C#">
+                <h4>C#</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/mysql.png" alt="MySQL">
+                <h4>MySQL</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/cpp.png" alt="C++">
+                <h4>C++</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/python.png" alt="Python">
+                <h4>Python</h4>
+            </div>
+            <div class="competence-card">
+                <img src="img/arduino.png" alt="Arduino">
+                <h4>Arduino</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER CONTACT ================= -->
+    <footer class="footer-contact" id="footer">
+        <div class="footer-content">
+            <p>Email : <a href="mailto:samuel.verel@viacesi.fr">samuel.verel@viacesi.fr</a></p>
+            <p>Téléphone : <a href="tel:06 95 68 00 50">06 95 68 00 50</a></p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Ton LinkedIn</a></p>
+            <p>GitHub : <a href="https://github.com/tonprofil" target="_blank">tonprofil</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
